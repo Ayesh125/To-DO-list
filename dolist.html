@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive To-Do List</title>
+  <link rel="stylesheet" href="dolistcss.css">
+ 
+</head>
+<body>
+  <div id="todo-container">
+    <h2>To-Do List</h2>
+    <div class="input-group">
+      <input type="text" id="taskInput" placeholder="Enter a task">
+      <button id="addBtn">Add</button>
+    </div>
+    
+    <div class="controls">
+      <button id="deleteAll">Delete All</button>
+      <button id="clearCompleted">Clear Completed</button>
+    </div>
+    <ul id="taskList"></ul>
+    <div id="stats">
+      <span id="totalTasks">0</span> tasks (<span id="completedTasks">0</span> completed)
+    </div>
+  </div>
+  <script src="dolistjs.js"></script>
+</body>
+</html>
